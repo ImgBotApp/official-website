@@ -1,0 +1,42 @@
+{
+  "name": "project-pc",
+  "version": "1.0.0",
+  "description": "pc",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "browser-sync": "*",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "*",
+    "gulp-clean": "*",
+    "gulp-clean-css": "*",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "*",
+    "gulp-imagemin": "*",
+    "gulp-less": "*",
+    "gulp-livereload": "*",
+    "gulp-load-plugins": "*",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "*",
+    "imagemin-pngcrush": "^5.1.0",
+    "qiniu": "^7.0.4",
+    "run-sequence": "^1.2.2",
+    "tiny-lr": "*"
+  },
+  "keywords": [
+    "project-pc"
+  ],
+  "author": "zhaozb",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1"
+  }
+}
