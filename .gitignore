@@ -9,5 +9,5 @@ out
 gen
 dist
 node_modules
-gulpfile.js
-package.json
+#gulpfile.js
+#package.json
