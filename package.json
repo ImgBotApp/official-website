@@ -16,7 +16,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-htmlmin": "*",
     "gulp-imagemin": "*",
-    "gulp-less": "*",
+    "gulp-less": "^3.3.2",
     "gulp-livereload": "*",
     "gulp-load-plugins": "*",
     "gulp-minify-css": "^1.2.4",
