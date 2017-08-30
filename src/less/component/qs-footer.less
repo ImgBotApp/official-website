@@ -1,0 +1,100 @@
+/*************************************
+*    create by xiaofeng.yao
+*    email 871213171@qq.com
+*    time 2017.08.30
+*    component qs-footer
+*    path /Users/apple/qishon/qishon-web-3.0/official-website/src/less/component/qs-footer.less
+*************************************/
+.qs-footer{
+    
+    @footer-width:100%;
+    @footer-height:340px;
+    @footer-background:#333;
+    @footer-liTxtColor:#6d6d71;
+
+    width:@footer-width;
+    background-color:@footer-background;
+    position:relative;
+    padding:48px 0 20px 0;
+
+    .qs-footer__litxt{
+        padding:0;
+        ul{
+            display:inline-block;
+            vertical-align:top;
+
+            li{
+                list-style:none;
+                font-weight:100;
+                margin:0 0 14px 0;
+                a{
+                    text-decoration:none;
+                    color:@footer-liTxtColor;
+                    font-size:12px;
+                    cursor:pointer;
+                    &:hover{
+                        color:#9f9fa5;
+                    }
+                }
+            }
+            .qs-footer__litxt__title{
+                color:#fff;
+                font-size:14px;
+            }
+        }
+        
+    }
+    .qs-footer__phone{
+        text-align:right;
+        color:#fff;
+        h3{
+            font-weight:200;
+            font-size:24px;
+            letter-spacing: 1px;
+        }
+        h5{
+            font-weight:100;
+            font-size:12px;
+            margin-bottom:20px;
+        }
+        .qs-footer__phone__btn{
+            margin-bottom:26px;
+            .btn{
+                color:#a0a0a0;
+                border:1px solid #a0a0a0;
+                background-color:transparent;
+                cursor:pointer;
+                &:hover{
+                    color:#dedddd;
+                }
+            }
+        }
+        .qs-footer__phone__icon{
+            color:#a0a0a0;
+            i{
+                font-size:26px;
+                margin-left:10px; 
+                &:hover{
+                    color:#dedddd;
+                    cursor:pointer;
+                }
+            }
+            
+        }
+    }
+    .qs-footer__company{
+        text-align:center;
+        color:@footer-liTxtColor;
+        margin-top:60px;
+        p{
+            font-size:12px;
+            margin:0 0 5px 0;
+        }
+        h4{
+            margin:0;
+            font-size:12px;
+        }
+    }
+
+
+}
