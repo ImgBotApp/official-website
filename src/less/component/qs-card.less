@@ -1,0 +1,64 @@
+/*************************************
+*    create by xiaofeng.yao
+*    email 871213171@qq.com
+*    time 2018.08.30
+*    component qs-card
+*    path /Users/apple/qishon/qishon-web-3.0/official-website/src/less/componnet/qs-card.less
+*************************************/
+.qs-card{
+
+    @card-width:380px;
+    @card-height:380px;
+    @card-borderColor:#ebeef3;
+
+
+    width:@card-width;
+    height:@card-height;
+    display:inline-block;
+    position: relative;
+    box-sizing: border-box;
+    border:1px solid @card-borderColor;
+    
+
+    .qs-card__headerImg{
+        width:100%;
+        height:200px;
+        overflow:hidden;
+        img{
+            width:100%;
+        }
+    }
+    .qs-card__contentTxt{
+        width:100%;
+
+        .qs-card__contentTxt__panel{
+            padding:18px 20px;
+            h3{
+                margin:0;
+                font-size:14px;
+                color:#333;
+            }
+            h2{
+                font-size:20px;
+                color:#333;
+                margin:20px 0 18px;
+            }
+            p{
+                font-size:13px;
+                color:#aaaaaa;
+                margin:0;
+            }
+            .qs-card__contentTxt__panel__txt{
+                height:48px;
+            }
+            .qs-card__contentTxt__panel__a{
+                margin:0;
+                padding:8px 0;
+            }
+            .qs-card__contentTxt__panel__a--border{
+                border-top:1px solid @card-borderColor;
+            }
+        }
+    }
+
+}
