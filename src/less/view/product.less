@@ -1,0 +1,81 @@
+.tab1{
+  background-color: #eee;
+  padding: 60px 20px;
+  text-align: center;
+  img{
+    width: 50%;
+    height: 50%;
+  }
+}
+.tab2{
+  padding: 40px 0;
+  text-align: center;
+  img{
+    width: 50%;
+    height: 50%;
+  }
+}
+.text {
+  //text-align: left;
+  h3{
+    font-size: 24px;
+  }
+  p{
+    font-size: 14px;
+    color: #777;
+  }
+}
+.product{
+  margin-top: 20px;
+  .my-tab{
+    margin-bottom: 30px;
+    text-align: center;
+    a{
+      text-decoration: none;
+      color: #3C3F41;
+      padding: 15px 60px;
+      &.active{
+        background-color: #f8f8f8;
+        color: #00a0e9;
+      }
+    }
+    a:hover{
+      background-color: #f8f8f8;
+      color: #00a0e9;
+    }
+
+  }
+}
+
+
+
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+  .tab1-text{
+    float: left;
+  }
+  .tab1-img{
+    float: right;
+  }
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px){
+  .tab1-text{
+    float: left;
+  }
+  .tab1-img{
+    float: right;
+  }
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+  .tab1-text{
+    float: left;
+  }
+  .tab1-img{
+    float: right;
+  }
+}
