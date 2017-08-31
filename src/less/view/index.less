@@ -1,4 +1,8 @@
 body{
+  @font12:1rem;
+  @font16:1.33rem;
+  @font18:1.5rem;
+  @height45: 3.75rem;
   .swiper-container{
     .slide-one {
       background: url("../images/banner1.png") no-repeat;
@@ -19,13 +23,13 @@ body{
       text-align: center;
       //width: 295px;
       height:221px;
-      padding-top: 20px;
       border:1px solid #fbfbfb;
       .projectName{
-        font-size: 18px;
+        font-size: @font18;
+        line-height:3.5rem;
       }
       .projectDesc{
-        font-size: 14px;
+        font-size: @font12;
       }
     }
   }
@@ -34,20 +38,25 @@ body{
     width: 100%;
     .pain-points-title{
       text-align: center;
-      font-size: 40px;
-      padding-top: 55px;
+      font-size: 2.8rem;
+      padding-top: 4.58rem;
+      padding-bottom: 1.5rem;
     }
     .tab-horizontal{
       text-align: center;
       margin:0;
+      padding:0;
+      display: block;
       li{
         border:2px solid #f9f9f9;
         list-style-type: none;
-        height:45px;
-        line-height: 45px;
+        width: 50%;
+        float: left;
+        height:@height45;
+        line-height: @height45;
         a{
           text-decoration: none;
-          font-size: 16px;
+          font-size: @font16;
           font-weight: 500;
           color: #000;
         }
@@ -59,23 +68,23 @@ body{
     .pain{
       .table-question{
         color: #ffffff;
-        font-size: 16px;
+        font-size: @font16;
         text-align: center;
-        height:45px;
+        height:@height45;
         background-color: #00a0e9;
-        line-height: 45px;
+        line-height: @height45;
       }
       .table-resolve{
         color: #ffffff;
-        font-size: 16px;
+        font-size: @font16;
         text-align: center;
-        height:45px;
+        height:@height45;
         background-color: #00a0e9;
-        line-height: 45px;
+        line-height: @height45;
         &:before{
           content: "";
           width: 1px;
-          height: 25px;
+          height: 2.08rem;
           position: absolute;
           left: 0;
           top: 10px;
@@ -83,11 +92,11 @@ body{
         }
       }
       .question-content{
-        font-size: 16px;
+        font-size: @font16;
         text-align: left;
-        height:100px;
+        height:8.33rem;
         border:1px solid #f5f5f5;
-        padding: 25px 30px 0;
+        padding: 2.08rem 2.5rem 0;
         background-color: #fafafa;
         span{
           color: #00a0e9;
@@ -123,6 +132,13 @@ body{
 
   .resolve{
     width: 100%;
+
     background-color: #fafafa;
+    .resolve-title{
+      text-align: center;
+      font-size: 2.8rem;
+      padding-top: 4.58rem;
+      padding-bottom: 1.5rem;
+    }
   }
 }

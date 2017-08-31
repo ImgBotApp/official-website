@@ -1,7 +1,9 @@
 $(function () {
     var banner = new Swiper('.banner', {
-        autoplay: 5000,//可选选项，自动滑动
-        loop: true
+        autoplay: 5000, //可选选项，自动滑动
+        loop: true,
+        pagination: '.swiper-pagination',
+        paginationClickable: true
     });
     var pain = new Swiper('.pain', {
         initialSlide: 0,
@@ -12,6 +14,14 @@ $(function () {
             $(".tab-horizontal li").eq(pain.activeIndex).addClass('active');
         }
     });
+
+    var resolveSwiper = new Swiper('.resolve-swiper',{
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 'auto',
+        paginationClickable: true,
+        spaceBetween: 20
+    })
 
     $(".tab-horizontal li").on('touchstart mousedown', function(e) {
         e.preventDefault()
@@ -30,9 +40,4 @@ $(function () {
         $resolve.parent().find(".active").removeClass("active");
         $resolve.eq(($(this).index()-1)/2).addClass("active");
     })
-
-    /*
-    * 移动端企业问题手风琴
-    * */
-    $(".table-sm-resolve")
 })
