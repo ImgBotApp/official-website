@@ -1,55 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-    <title>组件页面</title>
+    <title>案例</title>
     <link rel="stylesheet" href="../css/plugins/bootstrap.min.css">
     <link rel="stylesheet" href="../css/plugins/swiper-3.4.2.min.css">
     <link rel="stylesheet" href="../css/theme.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_399091_1s750bz73w61or.css">
     <!--[if lt IE 9]>
     <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
     <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body>
     <!--顶部导航栏菜单-->
     <nav class="navbar navbar-default">
-        <div class="container">
-            <!--  *************** 响应式头部 start ***************  -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"><img src="../images/logo.png" alt="logo"></a>
+            <div class="container">
+                <!--  *************** 响应式头部 start ***************  -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="../images/logo.png" alt="logo"></a>
+                </div>
+    
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" class="nav--active">产品</a></li>
+                        <li><a href="#">SaaS定制平台</a></li>
+                        <li><a href="#">SaaS面料平台</a></li>
+                        <li><a href="#">客户案例</a></li>
+                        <li><a href="#">活动资讯</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
             </div>
+            <!--  *************** 响应式头部 end ***************  -->
+        </nav>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="#" class="nav--active">产品</a></li>
-                    <li><a href="#">SaaS定制平台</a></li>
-                    <li><a href="#">SaaS面料平台</a></li>
-                    <li><a href="#">客户案例</a></li>
-                    <li><a href="#">活动资讯</a></li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div>
-        <!--  *************** 响应式头部 end ***************  -->
-    </nav>
-
-    <!-- 
-        qs-swiper
-        轮播图图片插入方式：在你开发的当前页面中以样式背景图插入图片。
-        .slide-one {
-            background: url("../images/banner1.png") no-repeat;
-        } 
-    -->
+    <!-- swiper -->
     <div class="qs-swiper">
         <!-- swiper component -->
         <div class="swiper-container">
@@ -65,7 +60,7 @@
                                     <a href="#" class="qs-swiper__title__btnpanel__btndetail">查看详情</a>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-slide slide-two">
@@ -80,7 +75,7 @@
                                     <a href="#" class="qs-swiper__title__btnpanel__btndetail">查看详情</a>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-slide slide-three">
@@ -94,7 +89,7 @@
                                     <a href="#" class="qs-swiper__title__btnpanel__btndetail">查看详情</a>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -102,15 +97,10 @@
         </div>
     </div>
 
-    <!-- 
-        qs-card
-        卡片修改方式：在你开发的当前页面中去控制修改容器，不去修改组件样式。
-    -->
-    <div class="container">
+    <!-- content -->
+    <div class="container case__content">
         <div class="row">
-            <h2>Qs-Card</h2>
-            <!--  *************** 组件 单个卡片组件 start ***************  -->
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 case__content__li">
                 <div class="qs-card"><!-- w:380 h:380 -->
                     <a href="###">
                         <div class="qs-card__headerImg">
@@ -130,64 +120,53 @@
                     </a>
                 </div>
             </div>
-            <!--  *************** 组件 单个卡片组件 end ***************  -->
         </div>
-
     </div>
 
-
-    <!-- 
-        qs-footer
-        footer插入方式：在你开发的当前页面中丢入尾巴。
-    -->
-    <div>
-        <h2>Qs-Footer</h2>
-        <!--  *************** 组件 footer start ***************  -->
-        <div class="qs-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-8 qs-footer__litxt">
-                        <ul class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
-                            <li class="qs-footer__litxt__title">了解我们</li>
-                            <li><a>关于我们</a></li>
-                            <li><a>面料平台</a></li>
-                            <li><a>定制平台</a></li>
-                            <li><a>服装智能零售</a></li>
-                        </ul>
-                        <ul class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
-                            <li class="qs-footer__litxt__title">联系我们</li>
-                            <li><a>联系方式</a></li>
-                            <li><a>QQ客服</a></li>
-                        </ul>
-                        <ul class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
-                            <li class="qs-footer__litxt__title">加入我们</li>
-                            <li><a>人才计划</a></li>
-                        </ul>
-                        <ul class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
-                            <li class="qs-footer__litxt__title">规则条款</li>
-                            <li><a>服务条款</a></li>
-                            <li><a>隐私条款</a></li>
-                        </ul>
+    <!-- footer -->
+    <div class="qs-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-8 qs-footer__litxt">
+                    <ul class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
+                        <li class="qs-footer__litxt__title">了解我们</li>
+                        <li><a>关于我们</a></li>
+                        <li><a>面料平台</a></li>
+                        <li><a>定制平台</a></li>
+                        <li><a>服装智能零售</a></li>
+                    </ul>
+                    <ul class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
+                        <li class="qs-footer__litxt__title">联系我们</li>
+                        <li><a>联系方式</a></li>
+                        <li><a>QQ客服</a></li>
+                    </ul>
+                    <ul class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
+                        <li class="qs-footer__litxt__title">加入我们</li>
+                        <li><a>人才计划</a></li>
+                    </ul>
+                    <ul class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
+                        <li class="qs-footer__litxt__title">规则条款</li>
+                        <li><a>服务条款</a></li>
+                        <li><a>隐私条款</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-4 qs-footer__phone">
+                    <h3>0591-88157808</h3>
+                    <h5>周一至周五 08:00 - 20:00</h5>
+                    <div class="qs-footer__phone__btn">
+                        <button class="btn">免费上门服务</button>
                     </div>
-                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-4 qs-footer__phone">
-                        <h3>0591-88157808</h3>
-                        <h5>周一至周五 08:00 - 20:00</h5>
-                        <div class="qs-footer__phone__btn">
-                            <button class="btn">免费上门服务</button>
-                        </div>
-                        <div class="qs-footer__phone__icon">
-                            <i class="iconfont icon-guanwang-tubiao-14"></i>
-                            <i class="iconfont icon-guanwang-tubiao-11"></i>
-                        </div>
+                    <div class="qs-footer__phone__icon">
+                        <i class="iconfont icon-guanwang-tubiao-14"></i>
+                        <i class="iconfont icon-guanwang-tubiao-11"></i>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 qs-footer__company">
-                        <p> Copyright © 2012-2017 Qishon Technology International Company Ltd. </p>
-                        <h4>厦门启尚科技有限公司</h4>
-                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 qs-footer__company">
+                    <p> Copyright © 2012-2017 Qishon Technology International Company Ltd. </p>
+                    <h4>厦门启尚科技有限公司</h4>
                 </div>
             </div>
         </div>
-        <!--  *************** 组件 footer end ***************  -->
     </div>
 
 
@@ -205,4 +184,5 @@
         })
     </script>
 </body>
+
 </html>
