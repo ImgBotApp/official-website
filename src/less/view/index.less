@@ -1,5 +1,5 @@
 body{
-  .swiper-container{
+  .banner{
     height:500px;
     .slide-one {
       background: url("../images/banner1.jpg") no-repeat;
@@ -13,5 +13,120 @@ body{
       background: url("../images/banner3.jpg") no-repeat;
       background-size: 100%;
     }
+  }
+  .project{
+    width: 100%;
+    background-color: #fafafa;
+    padding: 40px 0;
+    .system{
+      background-color: #ffffff;
+      text-align: center;
+      //width: 295px;
+      height:221px;
+      padding-top: 20px;
+      border:1px solid #fbfbfb;
+      .projectName{
+        font-size: 18px;
+      }
+      .projectDesc{
+        font-size: 14px;
+      }
+    }
+  }
+
+  .pain-points{
+    width: 100%;
+    .pain-points-title{
+      text-align: center;
+      font-size: 40px;
+      padding-top: 55px;
+    }
+    .tab-horizontal{
+      text-align: center;
+      margin:0;
+      li{
+        border:2px solid #f9f9f9;
+        list-style-type: none;
+        height:45px;
+        line-height: 45px;
+        a{
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: 500;
+          color: #000;
+        }
+      }
+      .active{
+        border-top:5px solid #00a0e9;
+      }
+    }
+    .pain{
+      .table-question{
+        color: #ffffff;
+        font-size: 16px;
+        text-align: center;
+        height:45px;
+        background-color: #00a0e9;
+        line-height: 45px;
+      }
+      .table-resolve{
+        color: #ffffff;
+        font-size: 16px;
+        text-align: center;
+        height:45px;
+        background-color: #00a0e9;
+        line-height: 45px;
+        &:before{
+          content: "";
+          width: 1px;
+          height: 25px;
+          position: absolute;
+          left: 0;
+          top: 10px;
+          background-color: #fff;
+        }
+      }
+      .question-content{
+        font-size: 16px;
+        text-align: left;
+        height:100px;
+        border:1px solid #f5f5f5;
+        padding: 25px 30px 0;
+        background-color: #fafafa;
+        span{
+          color: #00a0e9;
+        }
+        /*&:hover{
+          border-left:5px solid #00a0e9;
+          border-right:none;
+          background-color: #ffffff;
+        }*/
+        &.active{
+          border-left:5px solid #00a0e9;
+          border-right:none;
+          background-color: #ffffff;
+        }
+      }
+      .resolve-content{
+        padding-top: 40px;
+        font-size: 16px;
+        text-align: center;
+        display: none;
+        img{
+          margin-top: 20px;
+        }
+        &.active{
+          display: block;
+        }
+      }
+      .table-sm-resolve{
+        display: none;
+      }
+    }
+  }
+
+  .resolve{
+    width: 100%;
+    background-color: #fafafa;
   }
 }
