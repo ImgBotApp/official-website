@@ -27,20 +27,18 @@
             </button>
             <a class="navbar-brand" href="#"><img src="../images/logo.png" alt="logo"></a>
         </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="#" class="nav--active">产品</a></li>
-                <li><a href="#">SaaS定制平台</a></li>
-                <li><a href="#">SaaS面料平台</a></li>
-                <li><a href="#">客户案例</a></li>
-                <li><a href="#">活动资讯</a></li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div>
-    <!--  *************** 响应式头部 end ***************  -->
-</nav>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="./product.html">产品</a></li>
+                    <li><a href="./customization.html">SaaS定制平台</a></li>
+                    <li><a href="#">SaaS面料平台</a></li>
+                    <li><a href="#">客户案例</a></li>
+                    <li><a href="./consulting.html">活动资讯</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
 
 <!--
     qs-swiper
@@ -145,7 +143,7 @@
                         <div class="swiper-slide">
                             <div class="col-lg-4 col-md-4 col-sm-4">
                                 <div class="row table-question">企业问题</div>
-                                <div class="row question-content active"><span>[效果不直观]</span> 客户只能靠自己想象成衣是什么样子的。</div>
+                                <!--<div class="row question-content active"><span>[效果不直观]</span> 客户只能靠自己想象成衣是什么样子的。</div>
                                 <div class="row table-sm-resolve">
                                     <div class="hidden-lg hidden-md hidden-sm">
                                         <p>3D成衣展示，效果清晰逼真，支持旋转，缩放查看纹理、细节效果1。</p>
@@ -171,6 +169,68 @@
                                     <div class="hidden-lg hidden-md hidden-sm">
                                         <p>3D成衣展示，效果清晰逼真，支持旋转，缩放查看纹理、细节效果1。</p>
                                         <img src="../images/product/resolve.png" alt="">
+                                    </div>
+                                </div>-->
+                                <div class="row panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="question-content" role="tab">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <span>[效果不直观]</span> 客户只能靠自己想象成衣是什么样子的。
+                                            </a>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="table-sm-resolve">
+                                                <div class="hidden-lg hidden-md hidden-sm">
+                                                    <p>3D成衣展示，效果清晰逼真，支持旋转，缩放查看纹理、细节效果1。</p>
+                                                    <img src="../images/product/resolve.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="question-content" role="tab">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                                                <span>[效果不直观]</span> 客户只能靠自己想象成衣是什么样子的。
+                                            </a>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="table-sm-resolve">
+                                                <div class="hidden-lg hidden-md hidden-sm">
+                                                    <p>3D成衣展示，效果清晰逼真，支持旋转，缩放查看纹理、细节效果1。</p>
+                                                    <img src="../images/product/resolve.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="question-content" role="tab">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                                                <span>[效果不直观]</span> 客户只能靠自己想象成衣是什么样子的。
+                                            </a>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="table-sm-resolve">
+                                                <div class="hidden-lg hidden-md hidden-sm">
+                                                    <p>3D成衣展示，效果清晰逼真，支持旋转，缩放查看纹理、细节效果1。</p>
+                                                    <img src="../images/product/resolve.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="question-content" role="tab">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                                                <span>[效果不直观]</span> 客户只能靠自己想象成衣是什么样子的。
+                                            </a>
+                                        </div>
+                                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="table-sm-resolve">
+                                                <div class="hidden-lg hidden-md hidden-sm">
+                                                    <p>3D成衣展示，效果清晰逼真，支持旋转，缩放查看纹理、细节效果1。</p>
+                                                    <img src="../images/product/resolve.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -204,7 +264,7 @@
     <div class="resolve">
         <div class="container">
             <div class="row">
-                <p class="resolve-title">企业痛点对应解决方案</p>
+                <p class="resolve-title">启尚正在为各企业提供专业解决方案</p>
             </div>
             <div class="row">
                 <div class="swiper-container resolve-swiper">
