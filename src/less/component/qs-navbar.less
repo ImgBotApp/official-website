@@ -1,0 +1,55 @@
+/*************************************
+*    create by xiaofeng.yao
+*    email 871213171@qq.com
+*    time 2017.08.31
+*    component qs-navbar
+*    path /Users/apple/qishon/qishon-web-3.0/official-website/src/less/component/qs-navbar.less
+*************************************/
+.navbar{
+
+    @nav-height:6.67rem;
+    @nav-background:#fff;
+    @nav-aActiveColor:#0daeff;
+
+    
+    height:@nav-height;
+    background-color:@nav-background;
+    padding:0;
+    margin-bottom:0;
+
+    .navbar-header{
+        padding-top: 1.25rem;
+        .navbar-brand{
+            padding:0.67rem 0.5rem;
+        }
+    }
+
+    .navbar-right{
+        position: relative;
+        z-index: 99;
+        background: @nav-background;
+
+        .navbar-nav{
+            li{
+                a{
+                    padding: 2.4rem;
+                    min-width: 7.17rem;
+                    text-align: center;
+                    font-size: 1.17rem;
+                    &:hover{
+                        color:@nav-aActiveColor;
+                    }
+                }
+                .nav--active{
+                    color:@nav-aActiveColor;
+                    border-bottom: 2px solid #0daeff;
+                }
+                
+            }
+        }
+
+    }
+
+
+
+}
