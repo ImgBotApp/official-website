@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-    <title>首页</title>
+    <title>组件页面</title>
     <link rel="stylesheet" href="../css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/plugins/swiper-3.4.2.min.css">
     <link rel="stylesheet" href="../css/theme.css">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_399091_1s750bz73w61or.css">
     <!--[if lt IE 9]>
@@ -25,13 +26,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Brand</a>
+                <a class="navbar-brand" href="#"><img src="../images/logo.png" alt="logo"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">产品</a></li>
+                    <li><a href="#" class="nav--active">产品</a></li>
                     <li><a href="#">SaaS定制平台</a></li>
                     <li><a href="#">SaaS面料平台</a></li>
                     <li><a href="#">客户案例</a></li>
@@ -42,6 +43,69 @@
         <!--  *************** 响应式头部 end ***************  -->
     </nav>
 
+    <!-- 
+        qs-swiper
+        轮播图图片插入方式：在你开发的当前页面中以样式背景图插入图片。
+        .slide-one {
+            background: url("../images/banner1.png") no-repeat;
+        } 
+    -->
+    <div class="qs-swiper">
+        <!-- swiper component -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide-one">
+                    <!-- swiper title demo -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="qs-swiper__title col-xs-7 col-sm-7 col-md-8 col-lg-5">
+                                <h2 class="qs-swiper__title__h">面料扫描系统的应用</h2>
+                                <p class="qs-swiper__title__p">利郎通过使用我们的面料扫描仪系统和面料展示系统方案解决了传统采集方式面料信息无法完整和真实的难题</p>
+                                <div class="qs-swiper__title__btnpanel">
+                                    <a href="#" class="qs-swiper__title__btnpanel__btndetail">查看详情</a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="swiper-slide slide-two">
+                    <!-- swiper title demo -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="qs-swiper__title col-xs-7 col-sm-7 col-md-8 col-lg-5">
+                                <h2 class="qs-swiper__title__h">面料扫描系统的应用</h2>
+                                <p class="qs-swiper__title__p">利郎通过使用我们的面料扫描仪系统和面料展示系统方案解决了传统采集方式面料信息无法完整和真实的难题</p>
+                                <div class="qs-swiper__title__btnpanel">
+                                    <a href="#" class="qs-swiper__title__btnpanel__btndetail">立即注册</a>
+                                    <a href="#" class="qs-swiper__title__btnpanel__btndetail">查看详情</a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="swiper-slide slide-three">
+                    <!-- swiper title demo -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="qs-swiper__title col-xs-7 col-sm-7 col-md-8 col-lg-5">
+                                <h2 class="qs-swiper__title__h">面料扫描系统的应用</h2>
+                                <p class="qs-swiper__title__p">利郎通过使用我们的面料扫描仪系统和面料展示系统方案解决了传统采集方式面料信息无法完整和真实的难题</p>
+                                <div class="qs-swiper__title__btnpanel">
+                                    <a href="#" class="qs-swiper__title__btnpanel__btndetail">查看详情</a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- 
+        qs-card
+        卡片修改方式：在你开发的当前页面中去控制修改容器，不去修改组件样式。
+    -->
     <div class="container">
         <div class="row">
             <h2>Qs-Card</h2>
@@ -69,6 +133,11 @@
 
     </div>
 
+
+    <!-- 
+        qs-footer
+        footer插入方式：在你开发的当前页面中丢入尾巴。
+    -->
     <div>
         <h2>Qs-Footer</h2>
         <!--  *************** 组件 footer start ***************  -->
@@ -120,7 +189,18 @@
     </div>
 
 
-<script src="../scripts/plugins/jquery-2.1.1.min.js"></script>
-<script src="../scripts/plugins/bootstrap.min.js"></script>
+    <script src="../scripts/plugins/jquery-2.1.1.min.js"></script>
+    <script src="../scripts/plugins/bootstrap.min.js"></script>
+    <script src="../scripts/plugins/swiper-3.4.2.jquery.min.js"></script>
+    <script>
+        $(function () {
+            var mySwiper = new Swiper('.swiper-container', {
+                autoplay: 5000, //可选选项，自动滑动
+                loop: true,
+                pagination: '.swiper-pagination',
+                paginationClickable: true
+            })
+        })
+    </script>
 </body>
 </html>
