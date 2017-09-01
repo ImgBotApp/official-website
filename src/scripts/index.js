@@ -24,7 +24,7 @@ $(function () {
     })
 
     $(".tab-horizontal li").on('touchstart mousedown', function(e) {
-        e.preventDefault()
+        e.preventDefault();
         $(".tab-horizontal .active").removeClass('active');
         $(this).addClass('active');
         pain.slideTo($(this).index());
