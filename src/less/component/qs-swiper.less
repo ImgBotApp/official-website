@@ -6,57 +6,61 @@
 *    path /Users/apple/qishon/qishon-web-3.0/official-website/src/less/component/qs-swiper.less
 *************************************/
 @media (max-width: 768px) {
-    .swiper-container{
+    .qs-swiper{
+        .swiper-container{
+            
+            @swiper-height:21.46rem;
         
-        @swiper-height:21.46rem;
-    
-        height:@swiper-height;
-        
-        .swiper-slide{
             height:@swiper-height;
-            .qs-swiper__title{
-                margin-top: 3%;
-                .qs-swiper__title__h{
-                    font-size:2rem;
-                    margin-bottom: 1rem;
-                }
-                .qs-swiper__title__p{
-                    font-size:1rem;
-                    margin-bottom:1rem;
-                }
-                .qs-swiper__title__btnpanel{
-                    a{
+            
+            .swiper-slide{
+                height:@swiper-height;
+                .qs-swiper__title{
+                    margin-top: 3%;
+                    .qs-swiper__title__h{
+                        font-size:2rem;
+                        margin-bottom: 1rem;
+                    }
+                    .qs-swiper__title__p{
                         font-size:1rem;
-                        padding:6px 16px;
+                        margin-bottom:1rem;
+                    }
+                    .qs-swiper__title__btnpanel{
+                        a{
+                            font-size:1rem;
+                            padding:6px 16px;
+                        }
                     }
                 }
             }
+    
         }
-
-    }
+    } 
 }
 @media (min-width: 768px) and (max-width: 992px) { 
-    .swiper-container{
+    .qs-swiper{
+        .swiper-container{
+            
+            @swiper-height:26.46rem;
         
-        @swiper-height:26.46rem;
-    
-        height:@swiper-height;
-        .swiper-slide{
             height:@swiper-height;
-            .qs-swiper__title{
-                margin-top: 8%;
-                .qs-swiper__title__h{
-                    font-size:2.5rem;
-                    margin-bottom: 2rem;
-                }
-                .qs-swiper__title__p{
-                    font-size:1.3rem;
-                    margin-bottom: 3rem;
-                }
-                .qs-swiper__title__btnpanel{
-                    a{
-                        font-size:1.17rem;
-                        padding:10px 30px;
+            .swiper-slide{
+                height:@swiper-height;
+                .qs-swiper__title{
+                    margin-top: 8%;
+                    .qs-swiper__title__h{
+                        font-size:2.5rem;
+                        margin-bottom: 2rem;
+                    }
+                    .qs-swiper__title__p{
+                        font-size:1.3rem;
+                        margin-bottom: 3rem;
+                    }
+                    .qs-swiper__title__btnpanel{
+                        a{
+                            font-size:1.17rem;
+                            padding:10px 30px;
+                        }
                     }
                 }
             }
@@ -64,27 +68,29 @@
     }
 }
 @media (min-width: 992px) and (max-width: 1180px) { 
-    .swiper-container{
+    .qs-swiper{
+        .swiper-container{
+            
+            @swiper-height:32.46rem;
         
-        @swiper-height:32.46rem;
-    
-        height:@swiper-height;
-        .swiper-slide{
             height:@swiper-height;
-            .qs-swiper__title{
-                margin-top: 9%;
-                .qs-swiper__title__h{
-                    font-size:3rem;
-                    margin-bottom: 2rem;
-                }
-                .qs-swiper__title__p{
-                    font-size:1.3rem;
-                    margin-bottom: 3.5rem;
-                }
-                .qs-swiper__title__btnpanel{
-                    a{
-                        font-size:1.17rem;
-                        padding:10px 30px;
+            .swiper-slide{
+                height:@swiper-height;
+                .qs-swiper__title{
+                    margin-top: 9%;
+                    .qs-swiper__title__h{
+                        font-size:3rem;
+                        margin-bottom: 2rem;
+                    }
+                    .qs-swiper__title__p{
+                        font-size:1.3rem;
+                        margin-bottom: 3.5rem;
+                    }
+                    .qs-swiper__title__btnpanel{
+                        a{
+                            font-size:1.17rem;
+                            padding:10px 30px;
+                        }
                     }
                 }
             }
@@ -92,32 +98,35 @@
     }
 }
 @media (min-width: 1180px) { 
-    .swiper-container{
+    .qs-swiper{
+        .swiper-container{
+            
+            @swiper-height:36rem;
         
-        @swiper-height:36rem;
-    
-        height:@swiper-height;
-        .swiper-slide{
             height:@swiper-height;
-            .qs-swiper__title{
-                margin-top: 9%;
-                .qs-swiper__title__h{
-                    font-size:3rem;
-                    margin-bottom: 2rem;
-                }
-                .qs-swiper__title__p{
-                    font-size:1.3rem;
-                    margin-bottom: 3.5rem;
-                }
-                .qs-swiper__title__btnpanel{
-                    a{
-                        font-size:1.17rem;
-                        padding:10px 30px;
+            .swiper-slide{
+                height:@swiper-height;
+                .qs-swiper__title{
+                    margin-top: 9%;
+                    .qs-swiper__title__h{
+                        font-size:3rem;
+                        margin-bottom: 2rem;
+                    }
+                    .qs-swiper__title__p{
+                        font-size:1.3rem;
+                        margin-bottom: 3.5rem;
+                    }
+                    .qs-swiper__title__btnpanel{
+                        a{
+                            font-size:1.17rem;
+                            padding:10px 30px;
+                        }
                     }
                 }
             }
         }
     }
+    
 }
 .qs-swiper{
     .swiper-container{
@@ -143,10 +152,7 @@
                             background-color: transparent;
                             text-decoration:none;
                             color:#fff;
-                            margin-right: 1rem;
-                        }
-                        .qs-swiper__title__btnpanel__btndetail{
-
+                            margin-right: 0.5rem;
                         }
                     }
                 }
